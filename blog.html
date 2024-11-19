@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authortie</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="icon" href="./svg/logotop.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+   <header class="w-[90%] m-auto flex items-center justify-between py-3">
+       <nav class="flex items-center gap-8">
+        <a href="/">
+          <img src="./img/logo.png" alt="" />
+        </a>
+         <input class="hidden" type="checkbox" id="check">
+        <nav class="nav-ul flex items-center gap-8">
+          <a class="text-[16px] text-[#575756]" href="#">Аналитика</a>
+          <a class="text-[16px] text-[#575756]" href="#">Сообщество</a>
+          <a class="text-[16px] text-[#575756]" href="#">Для организаций</a>
+          <label for="check"><i class="fa-solid fa-x hidden"></i></label>
+        </nav>
+      </nav>
+      <nav class="flex items-center gap-6">
+        <a href="./blog.html">
+          <button
+            class="text-[#3a85f4] rounded-[123px] border-2 border-[#3a85f4] py-2 px-6 max-[608px]:py-[5px] max-[608px]:px-2"
+          >
+          <span class="max-[608px]:hidden">Создать</span>   заявку
+          </button>
+        </a>
+        <a class="max-[608px]:hidden" href="#"><img src="./svg/global.svg" alt="" /></a>
+        <a class="max-[608px]:hidden" href="#"><img src="./svg/logout.svg" alt="" /></a>
+        <label for="check"><i class="fa-solid fa-bars hidden"></i></label>
+      </nav> 
+    
+    </header>
+    <section class="w-[90%] m-auto">
+      <h1 class="font-bold text-[45px] max-md:text-[30px] max-sm:text-[20px]">
+        Создание заявки
+      </h1>
+      <div class="items-center flex justify-between mt-6">
+        <div>
+          <button
+            class="bg-[#F9FBFF] text-[16px] py-[5px] px-12 text-[#6b88b6] rounded-[5px] max-sm:text-[12px] max-sm:px-6"
+          >
+            Я заказчик
+          </button>
+          <button
+            class="bg-[#99afd3] text-[16px] py-[5px] px-12 text-[#6b88b6] rounded-[5px] max-sm:text-[12px] max-sm:px-6"
+          >
+            Я исполнитель
+          </button>
+        </div>
+        <p class="max-md:hidden">
+          Для публикации заявки вам необходимо
+          <span class="text-[#3a85f4]">зарегистрироваться.</span>
+        </p>
+      </div>
+      <div class="bg-[#F9FBFF]">
+        <h1 class="text-[#3a85f4] text-[20px] font-medium py-4 px-2">Я хочу</h1>
+        <div>
+          <div
+            class="bg-[#fff] rounded-[12px] box p-4 grid grid-cols-3 justify-between max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:p-1"
+          >
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="citation"
+                  name="service"
+                  value="citation"
+                />
+                <label for="citation">Повысить цитируемость своих работ</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="coauthor"
+                  name="service"
+                  value="coauthor"
+                />
+                <label for="coauthor">Стать соавтором</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="research"
+                  name="service"
+                  value="research"
+                />
+                <label for="research">Заказать исследования</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="text-graphics"
+                  name="service"
+                  value="text-graphics"
+                />
+                <label for="text-graphics"
+                  >Заказать работу с текстом и графикой</label
+                >
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="expert" name="service" value="expert" />
+                <label for="expert">Найти эксперта</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="citation"
+                  name="service"
+                  value="citation"
+                />
+                <label for="citation">Повысить цитируемость своих работ</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="coauthor"
+                  name="service"
+                  value="coauthor"
+                />
+                <label for="coauthor">Стать соавтором</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="research"
+                  name="service"
+                  value="research"
+                />
+                <label for="research">Заказать исследования</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="text-graphics"
+                  name="service"
+                  value="text-graphics"
+                />
+                <label for="text-graphics"
+                  >Заказать работу с текстом и графикой</label
+                >
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="expert" name="service" value="expert" />
+                <label for="expert">Найти эксперта</label>
+              </div>
+            </div>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="citation"
+                  name="service"
+                  value="citation"
+                />
+                <label for="citation">Повысить цитируемость своих работ</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="coauthor"
+                  name="service"
+                  value="coauthor"
+                />
+                <label for="coauthor">Стать соавтором</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="research"
+                  name="service"
+                  value="research"
+                />
+                <label for="research">Заказать исследования</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="text-graphics"
+                  name="service"
+                  value="text-graphics"
+                />
+                <label for="text-graphics"
+                  >Заказать работу с текстом и графикой</label
+                >
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="expert" name="service" value="expert" />
+                <label for="expert">Найти эксперта</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="citation"
+                  name="service"
+                  value="citation"
+                />
+                <label for="citation">Повысить цитируемость своих работ</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="coauthor"
+                  name="service"
+                  value="coauthor"
+                />
+                <label for="coauthor">Стать соавтором</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="research"
+                  name="service"
+                  value="research"
+                />
+                <label for="research">Заказать исследования</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="text-graphics"
+                  name="service"
+                  value="text-graphics"
+                />
+                <label for="text-graphics"
+                  >Заказать работу с текстом и графикой</label
+                >
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="expert" name="service" value="expert" />
+                <label for="expert">Найти эксперта</label>
+              </div>
+            </div>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="citation"
+                  name="service"
+                  value="citation"
+                />
+                <label for="citation">Повысить цитируемость своих работ</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="coauthor"
+                  name="service"
+                  value="coauthor"
+                />
+                <label for="coauthor">Стать соавтором</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="research"
+                  name="service"
+                  value="research"
+                />
+                <label for="research">Заказать исследования</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="text-graphics"
+                  name="service"
+                  value="text-graphics"
+                />
+                <label for="text-graphics"
+                  >Заказать работу с текстом и графикой</label
+                >
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="expert" name="service" value="expert" />
+                <label for="expert">Найти эксперта</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="citation"
+                  name="service"
+                  value="citation"
+                />
+                <label for="citation">Повысить цитируемость своих работ</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="coauthor"
+                  name="service"
+                  value="coauthor"
+                />
+                <label for="coauthor">Стать соавтором</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="research"
+                  name="service"
+                  value="research"
+                />
+                <label for="research">Заказать исследования</label>
+              </div>
+
+              <div class="radio-option">
+                <input
+                  type="radio"
+                  id="text-graphics"
+                  name="service"
+                  value="text-graphics"
+                />
+                <label for="text-graphics"
+                  >Заказать работу с текстом и графикой</label
+                >
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="expert" name="service" value="expert" />
+                <label for="expert">Найти эксперта</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-[#3a85f4] text-[20px] font-medium py-4 px-2">
+          Описание работы
+        </h1>
+        <div class="rounded-[12px] bg-[#fff] w-full h-[200px]">
+          <input class="p-4" type="text" placeholder="Введите описание" />
+        </div>
+        <div class="flex items-start
+         flex-wrap justify-between">
+          <div>
+            <h1 class="text-[#3a85f4] text-[20px] font-medium py-4 px-2">
+              Ключевые слова
+            </h1>
+            <div class="rounded-[12px] bg-[#fff] p-4">
+              <div class="flex items-center flex-wrap gap-2 my-2">
+                <button
+                  class="flex items-center gap-2 py-[5px] px-2 border-2 border-[#b0bfdb] rounded-[75px] text-[#2f2f2f]"
+                >
+                  первый и очень сильно длинный ключ
+                  <img src="./svg/x.svg" alt="" />
+                </button>
+                <button
+                  class="flex items-center gap-2 py-[5px] px-2 border-2 border-[#b0bfdb] rounded-[75px] text-[#2f2f2f]"
+                >
+                  второй ключ
+                  <img src="./svg/x.svg" alt="" />
+                </button>
+              </div>
+              <div class="flex items-center flex-wrap gap-2 my-2">
+                <button
+                  class="flex items-center gap-2 py-[5px] px-2 border-2 border-[#b0bfdb] rounded-[75px] text-[#2f2f2f]"
+                >
+                  третий ключ
+                  <img src="./svg/x.svg" alt="" />
+                </button>
+                <button
+                  class="flex items-center gap-2 py-[5px] px-2 border-2 border-[#b0bfdb] rounded-[75px] text-[#2f2f2f]"
+                >
+                  четвертый ключ
+                  <img src="./svg/x.svg" alt="" />
+                </button>
+                <button
+                  class="flex items-center gap-2 py-[5px] px-2 border-2 border-[#b0bfdb] rounded-[75px] text-[#2f2f2f]"
+                >
+                  пятый ключ
+                  <img src="./svg/x.svg" alt="" />
+                </button>
+              </div>
+              <button
+                class="flex items-center gap-2 py-[5px] px-2 border-2 border-[#b0bfdb] rounded-[75px] text-[#2f2f2f]"
+              >
+                шестой ключ
+                <img src="./svg/x.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[#3a85f4] text-[20px] font-medium py-4 px-2">
+              Область знаний
+            </h1>
+            <div
+              class="rounded-[12px] bg-[#fff] flex items-start flex-wrap justify-between p-4 gap-4 max-sm:p-2"
+            >
+              <div>
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="research"
+                    name="service"
+                    value="research"
+                  />
+                  <label for="research">Biology/Genetics</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="text-graphics"
+                    name="service"
+                    value="text-graphics"
+                  />
+                  <label for="text-graphics">Neuro/Psycho</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="expert"
+                    name="service"
+                    value="expert"
+                  />
+                  <label for="expert">Medicine/Pharma</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="citation"
+                    name="service"
+                    value="citation"
+                  />
+                  <label for="citation">Chemistry</label>
+                </div>
+              </div>
+              <div>
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="research"
+                    name="service"
+                    value="research"
+                  />
+                  <label for="research">Math/Computer </label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="text-graphics"
+                    name="service"
+                    value="text-graphics"
+                  />
+                  <label for="text-graphics">Neuro/Psycho</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="expert"
+                    name="service"
+                    value="expert"
+                  />
+                  <label for="expert">Physics/Astronomy</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="citation"
+                    name="service"
+                    value="citation"
+                  />
+                  <label for="citation">Engineering/Material</label>
+                </div>
+              </div>
+              <div>
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="text-graphics"
+                    name="service"
+                    value="text-graphics"
+                  />
+                  <label for="text-graphics">Social</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="research"
+                    name="service"
+                    value="research"
+                  />
+                  <label for="research">Earth/Environment</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="checkbox"
+                    id="expert"
+                    name="service"
+                    value="expert"
+                  />
+                  <label for="expert">Medicine/Pharma</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[#3a85f4] text-[20px] font-medium py-4 px-2">
+              Срок исполнения
+            </h1>
+            <input class="py-2 px-8" type="date">
+          </div>
+        </div>
+        <div class="mt-10 mb-10">
+          
+          <h1 class="text-center text-[20px] ">Приватная заявка</h1>
+        </div>
+      </div>
+
+    </section>
+  
+    <footer class="bg-[#262628]">
+      <div
+        class="w-[90%] m-auto flex items-center justify-between py-6 max-lg:flex-col max-lg:gap-6"
+      >
+        <div class="flex items-center gap-12 max-[900px]:flex-col">
+          <h3 class="text-[#fff] max-[900px]:hidden">
+            Authortie <br />
+            <span class="text-[#888]">© Все права защищены</span>
+          </h3>
+          <a class="text-[#fff] text-[16px]" href="#"
+            >Политика конфиденциальности</a
+          >
+          <a class="text-[#fff] text-[16px]" href="#">Аналитика</a>
+          <a class="text-[#fff] text-[16px]" href="#">Сообщество</a>
+          <a class="text-[#fff] text-[16px]" href="#">Для организаций</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#"><img src="./svg/facebook.svg" alt="" /></a>
+          <a href="#"><img src="./svg/instagram.svg" alt="" /></a>
+          <a href="#"
+            ><img
+              src="./svg/telegram.svg
+                "
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
