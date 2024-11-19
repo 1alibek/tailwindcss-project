@@ -32,7 +32,7 @@
   box-shadow: 0 0 23px 0 rgba(43, 123, 211, 0.1);
 }
 
-label {
+.label {
   display: none;
 }
 @media (max-width: 905px) {
@@ -50,7 +50,7 @@ label {
     color: #fff;
   }
 
-  label {
+  .label {
     display: block;
   }
   #check:checked ~ .nav-ul{
